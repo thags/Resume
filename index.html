@@ -9,6 +9,7 @@
     <title>Tyler Hagstrom | Software Engineer</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -28,12 +29,18 @@
     <main id="main">
       <section class="hero container" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
+          <div class="print-only print-masthead">
+            <strong>Tyler Hagstrom</strong>
+            <span>Software Engineer · Platform &amp; DevOps</span>
+            <div><a href="mailto:tylerhagstrom@pm.me">tylerhagstrom@pm.me</a><a href="https://github.com/thags">github.com/thags</a></div>
+          </div>
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software engineer · Platform &amp; DevOps</p>
           <h1 id="hero-title">Hi, I'm Tyler<span class="accent">.</span><br>I build systems that hold up.</h1>
           <p class="hero-description">I'm a software engineer focused on backend systems, automation, and reliable delivery. I turn complex workflows into software that teams can run and maintain.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
             <a class="button button-secondary" href="#experience">View experience <span aria-hidden="true">↓</span></a>
+            <button class="button button-secondary" type="button" id="print-resume">Print / Save as PDF <span aria-hidden="true">↓</span></button>
           </div>
         </div>
         <aside class="hero-note" aria-label="At a glance">
@@ -60,7 +67,9 @@
             <h2 id="about-title">Practical engineering for the systems behind the scenes.</h2>
           </div>
           <div class="about-content">
+            <h2 class="print-only print-section-title">Summary</h2>
             <p>My work spans backend development, data pipelines, CI/CD, and infrastructure automation. I use C#, Python, Go, and SQL to improve reliability, cut manual work, and make releases more dependable.</p>
+            <h2 class="print-only print-section-title">Core skills</h2>
             <div class="skill-groups" aria-label="Core skills">
               <div class="skill-group">
                 <h3>Languages</h3>
@@ -84,27 +93,28 @@
           <div>
             <p class="section-label">02 / Selected work</p>
             <h2 id="projects-title">Projects, built to solve real problems.</h2>
+            <h2 class="print-only print-section-title">Projects</h2>
           </div>
           <a class="text-link" href="https://github.com/thags" target="_blank" rel="noopener noreferrer">More on GitHub <span aria-hidden="true">↗</span></a>
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <div class="project-top"><span class="project-number">01</span><span class="project-kind">Go / CLI</span></div>
-            <h3>LoVi</h3>
-            <p>A command-line log viewer for monitoring and debugging. Find the latest log, follow updates in real time, and switch between configured log sources.</p>
-            <a class="card-link" href="https://github.com/thags/LoVi" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+            <div class="project-top"><span class="project-number">01</span><span class="project-kind">Web app / Recipes</span></div>
+            <h3>SteadyFeast</h3>
+            <p>Plan meals, build shopping lists, cook from recipes, and track nutrition without re-entering the same meal at each step.</p>
+            <a class="card-link" href="https://recipes.devtyler.org" target="_blank" rel="noopener noreferrer">Visit site <span aria-hidden="true">↗</span></a>
           </article>
           <article class="project-card">
-            <div class="project-top"><span class="project-number">02</span><span class="project-kind">Python / Anki add-on</span></div>
+            <div class="project-top"><span class="project-number">02</span><span class="project-kind">Web app / Fitness</span></div>
+            <h3>LoggingIron</h3>
+            <p>Plan workouts, log each set on your phone, time rests, and review lifting and muscle-group progress over time.</p>
+            <a class="card-link" href="https://workout.devtyler.org" target="_blank" rel="noopener noreferrer">Visit site <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">03</span><span class="project-kind">Python / Anki add-on</span></div>
             <h3>LingQ–Anki Sync</h3>
             <p>An add-on that imports LingQ vocabulary into Anki and syncs learning progress back to LingQ using its API.</p>
             <a class="card-link" href="https://github.com/thags/lingqAnkiSync" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="project-card">
-            <div class="project-top"><span class="project-number">03</span><span class="project-kind">Hardware / Software</span></div>
-            <h3>Raspberry Pi handheld emulator</h3>
-            <p>A custom handheld emulator built as a hardware and software project around a Raspberry Pi.</p>
-            <span class="card-caption">Personal build</span>
           </article>
         </div>
       </section>
@@ -115,6 +125,7 @@
             <div>
               <p class="section-label">03 / Experience</p>
               <h2 id="experience-title">Where I've worked.</h2>
+              <h2 class="print-only print-section-title">Professional experience</h2>
             </div>
             <p class="section-intro">Backend engineering, infrastructure, and automation across production environments.</p>
           </div>
@@ -144,6 +155,7 @@
               </div>
             </article>
             <article class="experience-item">
+              <h2 class="print-only print-section-title print-continued">Professional experience, continued</h2>
               <div class="experience-meta"><span class="dates">Dec 2018 – May 2019</span><span class="company">Cerner</span></div>
               <div class="experience-detail">
                 <h3>System Engineer</h3>
@@ -168,6 +180,7 @@
         <div>
           <p class="section-label">04 / Background</p>
           <h2 id="credentials-title">Education &amp; credentials.</h2>
+          <h2 class="print-only print-section-title">Education &amp; credentials</h2>
         </div>
         <div class="credentials-grid">
           <div><h3>Education</h3><p>B.S. Information Systems</p><span>Donnelly College · GPA 3.8</span></div>
